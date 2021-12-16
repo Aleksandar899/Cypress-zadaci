@@ -97,17 +97,17 @@ describe('login test', () => {
 
 
 
-    // it('login with valid credentials', () => {
-    //     cy.visit('/');
-    //     cy.url().should('eq', 'https://gallery-app.vivifyideas.com/');
-    //     cy.get('.nav-link').eq(1).click();
-    //     cy.url().should('eq', 'https://gallery-app.vivifyideas.com/login');
-    //     cy.get('#email').type('aleksandarloncar89@gmail.com');
-    //     cy.get('#password').type('Sladoled1!');
-    //     cy.get('button[type="submit"]').click();
-    // });
-    // it('logout', () => {
-    //     cy.wait(500);
-    //     cy.get('.nav-link').eq(3).click();
-    // });
+    it('login with valid credentials', () => {
+        cy.visit('/');
+        cy.url().should('eq', 'https://gallery-app.vivifyideas.com/');
+        cy.get('.nav-link').eq(1).click();
+        cy.url().should('eq', 'https://gallery-app.vivifyideas.com/login');
+        cy.get('#email').type('aleksandarloncar89@gmail.com');
+        cy.get('#password').type('Sladoled1!');
+        cy.get('button[type="submit"]').click();
+    });
+    it('logout', () => {
+        cy.wait(500);
+        cy.get('.nav-link').eq(3).click();
+    });
 });
