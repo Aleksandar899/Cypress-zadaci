@@ -37,8 +37,8 @@ it('login with valid credentials', () => {
 
     });
 it('logout', () => {
-    cy.wait(500);
-    cy.get(Locators.Logout.LogoutButton).eq(3).click();
+    cy.wait(1000);
+    cy.get(Locators.Header.LogoutButton).eq(3).click();
 });
 
 });

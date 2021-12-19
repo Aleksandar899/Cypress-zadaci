@@ -1,5 +1,5 @@
 {
-  "name": "cypress1",
+  "name": "cypress",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,9 +7,8 @@
     "cypress": "^9.1.1",
     "faker": "^5.5.3"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "./node_modules/.bin/cypress open"
+    "test": "cypress open"
   },
   "author": "",
   "license": "ISC"
