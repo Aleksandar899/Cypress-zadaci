@@ -39,8 +39,4 @@ describe('POM Create Gallery', () => {
         
     });
 
-
-
-    
-
 }); 
