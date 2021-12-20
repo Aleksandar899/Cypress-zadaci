@@ -8,16 +8,24 @@ class AuthLogin {
     get submitBtn() {
         return cy.get("button[type='submit']");
     }
-    get logoutBtn(){
+    get logoutBtn() {
         return cy.get(".nav-link").eq(3);
-   }
+    }
 
-   login(email, password){
-       this.emailInput.clear().type(email);
-       this.passwordInput.clear().type(password);
-       this.submitBtn.click();
+    get errorMsg() {
+        return cy.get('.alert');
+    }
 
-   }
+    get loginPageheading (){
+        return cy.get ('h1');
+    }
+
+    login(email, password) {
+        this.emailInput.clear().type(email);
+        this.passwordInput.clear().type(password);
+        this.submitBtn.click();
+
+    }
 }
 
 export const authLogin = new AuthLogin();

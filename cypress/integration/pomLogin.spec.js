@@ -21,9 +21,17 @@ describe('POM Login', () => {
         cy.url().should('contains', 'gallery-app');
     });
 
-    it('login with invalid credentials', () => {
+    it.only('login with invalid credentials', () => {
         header.loginBtn.click();
+        authLogin.loginPageheading.should('be.visible');
         authLogin.login(userData.randomEmail, userData.randomPassword)
+        
+        authLogin.errorMsg.should('be.visible');
+        authLogin.errorMsg.should('have.text', 'Bad Credentials');
+        authLogin.errorMsg.should('have.css', 'background-color', 'rgb(248, 215, 218)');
+        header.loginBtn.should('exist');
+        authLogin.submitBtn.should('exist');
+
         cy.url().should('contains', '/login');
 
     });
