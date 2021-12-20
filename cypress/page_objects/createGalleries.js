@@ -26,9 +26,6 @@ class CreateGalleries {
         this.submitBtn.click();
 
     }
-    
-
-
 
 }
 
