@@ -14,6 +14,6 @@ it('Valid registration', () => {
     cy.get('#password-confirmation').type('proba1234');
     cy.get('.form-check-input').eq(0).click();
     cy.get('button[type="submit"]').click();
-});
+    });
 
 });

@@ -10,6 +10,9 @@ class Header {
     get logoutBtn() {
         return cy.get(".nav-link").eq(3);
     }
+    get createBtn() {
+        return cy.get(".nav-link").eq(2);
+    }
 
 }
 
