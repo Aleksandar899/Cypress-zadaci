@@ -1,4 +1,15 @@
 class Header {
+    get allGalleriesBtn() {
+        return cy.get(".nav-link").eq(0);
+    }
+    get myGalleries() {
+        return cy.get("a[href='/my-galleries']");
+    }
+
+    get createGalleries() {
+        return cy.get("a[href='/create']");
+    }
+
     get loginBtn() {
         return cy.get("a[href='/login']");
     }

@@ -36,9 +36,16 @@ describe('login test', () => {
         cy.get(Locators.LoginPage.SubmitButton).click();
 
     });
+<<<<<<< HEAD
     it('logout', () => {
         cy.wait(500);
         cy.get(Locators.Logout.LogoutButton).eq(3).click();
     });
+=======
+it('logout', () => {
+    cy.wait(1000);
+    cy.get(Locators.Header.LogoutButton).eq(3).click();
+});
+>>>>>>> fa0b0038da808545466c5d2bfb7f84bef7df5fd0
 
 });
